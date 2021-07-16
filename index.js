@@ -28,6 +28,7 @@ const gifOfTheDay = async (daysLeft) => {
 
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.tag}!`)
+  general_channel.send("Tô on")
   const general_channel = client.channels.cache.get(
     process.env.general_channel_id
   )
